@@ -12,7 +12,7 @@ end
 
 # Define the application we're testing
 def app
-  # Load the application defined in config.ru
+  # Load the application defined in config.ru. The app we are testing against is defined in config.ru
   Rack::Builder.parse_file('config.ru').first
 end
 
